@@ -1,0 +1,210 @@
+<html>
+
+<head>
+  <title>My form Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="mainstyle.css">
+  <script>
+    var actualAnswer;
+    function printQuestion() {
+      var number1, number2;
+      number1 = Math.floor(Math.random() * 10);
+      number2 = Math.floor(Math.random() * 10);
+      number3 = Math.floor(Math.random() * 10);
+      number4 = Math.floor(Math.random() * 10);
+      number5 = Math.floor(Math.random() * 10);
+      number6 = Math.floor(Math.random() * 10);
+      number7 = Math.floor(Math.random() * 10);
+      number8 = Math.floor(Math.random() * 10);
+      number9 = Math.floor(Math.random() * 10);
+      number10 = Math.floor(Math.random() * 10);
+      number11 = Math.floor(Math.random() * 10);
+      number12 = Math.floor(Math.random() * 10);
+      number13 = Math.floor(Math.random() * 10);
+      number14 = Math.floor(Math.random() * 10);
+      number15 = Math.floor(Math.random() * 10);
+      number16 = Math.floor(Math.random() * 10);
+      number17 = Math.floor(Math.random() * 10);
+      number18 = Math.floor(Math.random() * 10);
+      number19 = Math.floor(Math.random() * 10);
+      number20 = Math.floor(Math.random() * 10);
+      actualAnswer = number1 + number2
+      actualAnswer2 = number3 + number4
+      actualAnswer3 = number5 + number6
+      actualAnswer4 = number7 + number8
+      actualAnswer5 = number9 + number10
+      actualAnswer6 = number11 + number12
+      actualAnswer7 = number13 + number14
+      actualAnswer8 = number15 + number16
+      actualAnswer9 = number17 + number18
+      actualAnswer10 = number19 + number20
+      document.getElementById("question").innerHTML = "&nbsp; Question 1: What is " + number1 + " + " + number2 + "?";
+      document.getElementById("question2").innerHTML = "&nbsp; Question 2: What is " + number3 + " + " + number4 + "?";
+      document.getElementById("question3").innerHTML = "&nbsp; Question 3: What is " + number5 + " + " + number6 + "?";
+      document.getElementById("question4").innerHTML = "&nbsp; Question 4: What is " + number7 + " + " + number8 + "?";
+      document.getElementById("question5").innerHTML = "&nbsp; Question 5: What is " + number9 + " + " + number10 + "?";
+      document.getElementById("question6").innerHTML = "&nbsp; Question 6: What is " + number11 + " + " + number12 + "?";
+      document.getElementById("question7").innerHTML = "&nbsp; Question 7: What is " + number13 + " + " + number14 + "?";
+      document.getElementById("question8").innerHTML = "&nbsp; Question 8: What is " + number15 + " + " + number16 + "?";
+      document.getElementById("question9").innerHTML = "&nbsp; Question 9: What is " + number17 + " + " + number18 + "?";
+      document.getElementById("question10").innerHTML = "&nbsp; Question 10: What is " + number19 + " + " + number20 + "?";
+      
+    }
+
+    function checkAnswer () 
+    {
+          // answer 1 stuff
+        var myAnswer = document.getElementById("answer").value;
+        if(myAnswer == actualAnswer) {
+        document.getElementById("message").innerHTML = ("&nbsp; Question 1: Yay! You answered " + myAnswer);
+        var qyn = 1;
+        }
+        else {
+                document.getElementById("message").innerHTML = ("&nbsp; Question 1: You answered " + myAnswer + ", not quite right!");
+                var qyn = 0;
+        }
+          // answer 2 stuff //
+        var myAnswer2 = document.getElementById("answer2").value;
+        if(myAnswer2 == actualAnswer2) {
+        document.getElementById("message2").innerHTML = ("&nbsp; Question 2: Yay! You answered " + myAnswer2);
+        var q2yn = 1;
+        }
+        else {
+        document.getElementById("message2").innerHTML = ("&nbsp; Question 2: You answered " + myAnswer2 + ", not quite right!");
+        var q2yn = 0;      
+        }
+          // answer 3 stuff //
+        var myAnswer3 = document.getElementById("answer3").value;
+        if(myAnswer3 == actualAnswer3) {
+        document.getElementById("message3").innerHTML = ("&nbsp; Question 3: Yay! You answered " + myAnswer3);
+        var q3yn = 1;
+        }
+        else {
+                document.getElementById("message3").innerHTML = ("&nbsp; Question 3: You answered " + myAnswer3 + ", not quite right!");
+                var q3yn = 0;
+        }
+          // answer 4 stuff //
+        var myAnswer4 = document.getElementById("answer4").value;
+        if(myAnswer4 == actualAnswer4) {
+        document.getElementById("message4").innerHTML = ("&nbsp; Question 4: Yay! You answered " + myAnswer4);
+        var q4yn = 1;
+        }
+        else {
+                document.getElementById("message4").innerHTML = ("&nbsp; Question 4: You answered " + myAnswer4 + ", not quite right!");
+                var q4yn = 0;
+        }
+         // answer 5 stuff //
+        var myAnswer5 = document.getElementById("answer5").value;
+        if(myAnswer5 == actualAnswer5) {
+        document.getElementById("message5").innerHTML = ("&nbsp; Question 5: Yay! You answered " + myAnswer5);
+                var q5yn = 1;
+        }
+        else {
+                document.getElementById("message5").innerHTML = ("&nbsp; Question 5: You answered " + myAnswer5 + ", not quite right!");
+                var q5yn = 0;
+        }
+        // answer 6 stuff //
+        var myAnswer6 = document.getElementById("answer6").value;
+        if(myAnswer6 == actualAnswer6) {
+        document.getElementById("message6").innerHTML = ("&nbsp; Question 6: Yay! You answered " + myAnswer6);
+                var q6yn = 1;
+        }
+        else {
+                document.getElementById("message6").innerHTML = ("&nbsp; Question 6: You answered " + myAnswer6 + ", not quite right!");
+                var q6yn = 0;
+        }
+        // answer 7 stuff //
+        var myAnswer7 = document.getElementById("answer7").value;
+        if(myAnswer7 == actualAnswer7) {
+        document.getElementById("message7").innerHTML = ("&nbsp; Question 7: Yay! You answered " + myAnswer7);
+                var q7yn = 1;
+        }
+        else {
+                document.getElementById("message7").innerHTML = ("&nbsp; Question 7: You answered " + myAnswer7 + ", not quite right!");
+                var q7yn = 0;
+        }
+        // answer 8 stuff //
+        var myAnswer8 = document.getElementById("answer8").value;
+        if(myAnswer8 == actualAnswer8) {
+        document.getElementById("message8").innerHTML = ("&nbsp; Question 8: Yay! You answered " + myAnswer8);
+                var q8yn = 1;
+        }
+        else {
+                document.getElementById("message8").innerHTML = ("&nbsp; Question 8: You answered " + myAnswer8 + ", not quite right!");
+                var q8yn = 0;
+        }
+        // answer 9 stuff //
+        var myAnswer9 = document.getElementById("answer9").value;
+        if(myAnswer9 == actualAnswer9) {
+        document.getElementById("message9").innerHTML = ("&nbsp; Question 9: Yay! You answered " + myAnswer9);
+                var q9yn = 1;
+        }
+        else {
+                document.getElementById("message9").innerHTML = ("&nbsp; Question 9: You answered " + myAnswer9 + ", not quite right!");
+                var q9yn = 0;
+        }
+        // answer 10 stuff //
+        var myAnswer10 = document.getElementById("answer10").value;
+        if(myAnswer10 == actualAnswer10) {
+        document.getElementById("message10").innerHTML = ("&nbsp; Question 10: Yay! You answered " + myAnswer10);
+                var q10yn = 1;
+        }
+        else {
+                document.getElementById("message10").innerHTML = ("&nbsp; Question 10: You answered " + myAnswer10 + ", not quite right!");
+                var q10yn = 0;
+        }
+        var total = (qyn + q2yn + q3yn + q4yn + q5yn + q6yn + q7yn + q8yn + q9yn + q10yn)
+        var minus = (10 - total)
+        var percent = (total * 10)
+
+        document.getElementById("results").innerHTML = ("&nbsp; Results: You answered " + total + " correctly and " + minus + " incorrectly. That's " + percent + "% correct!");
+    }
+  </script>
+</head>
+
+<body onload = "printQuestion();">
+  <h1><a href="firstpage.html">Homework Website</a></h1>
+  <p></p>
+  &nbsp;
+  <div id="question"></div>
+  <div id="question2"></div>
+  <div id="question3"></div>
+  <div id="question4"></div>
+  <div id="question5"></div>
+  <div id="question6"></div>
+  <div id="question7"></div>
+  <div id="question8"></div>
+  <div id="question9"></div>
+  <div id="question10"></div>
+  <br> &nbsp;Question 1: <input type="input" id="answer"><br> &nbsp;
+  <br> &nbsp;Question 2 <input type="input" id="answer2"><br> &nbsp;
+  <br> &nbsp;Question 3 <input type="input" id="answer3"><br> &nbsp;
+  <br> &nbsp;Question 4 <input type="input" id="answer4"><br> &nbsp;
+  <br> &nbsp;Question 5: <input type="input" id="answer5"><br> &nbsp;
+  <br> &nbsp;Question 6: <input type="input" id="answer6"><br> &nbsp;
+  <br> &nbsp;Question 7: <input type="input" id="answer7"><br> &nbsp;
+  <br> &nbsp;Question 8: <input type="input" id="answer8"><br> &nbsp;
+  <br> &nbsp;Question 9: <input type="input" id="answer9"><br> &nbsp;
+  <br> &nbsp;Question 10: <input type="input" id="answer10"><br> &nbsp;
+  <br> &nbsp;
+ <button id="mySubmit" onclick="checkAnswer();">Submit</button>
+  <div id="message"></div> <br>
+  <div id="message2"></div> <br>
+  <div id="message3"></div> <br>
+  <div id="message4"></div> <br>
+  <div id="message5"></div> <br>
+  <div id="message6"></div> <br>
+  <div id="message7"></div> <br>
+  <div id="message8"></div> <br>
+  <div id="message9"></div> <br>
+  <div id="message10"></div> <br>
+  <div id="results"></div> <br>
+<br>
+<br>
+<br>
+  <p id="Rdrctlnks">
+  <a id="Rdrctlnks" href="firstpage.html">Page 1: Home Page</a></li> &nbsp; | &nbsp;
+  <a id="Rdrctlnks" href="secondpage.html">Page 2: Storytime</a></li> &nbsp; | &nbsp;
+  <a id="Rdrctlnks" href="thirdpage.html">Page 3: Contact Us</a></li> &nbsp; | &nbsp;
+  </p>
+</body>

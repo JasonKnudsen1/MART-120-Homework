@@ -1,0 +1,21 @@
+span{
+    color:white;
+    background-color:red;
+}
+
+#Rdrctlnks {
+    font-size: 100%; font-weight: bold; font-family: Arial, Helvetica, serif; color: darkslateblue;
+    text-decoration: none;
+    font-style: oblique;
+}
+
+#specificLink {
+  color: red;
+  font-family: arial;
+  font-size: 28px;
+}
+
+.column {
+     width:500px;
+     float:center;
+}

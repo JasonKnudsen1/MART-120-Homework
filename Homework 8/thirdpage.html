@@ -1,0 +1,86 @@
+<html>
+
+<head>
+  <title>My form Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="mainstyle.css">
+  <script>
+    function getInformation() {
+
+
+  var myCheckbox = document.getElementById("tBox");
+  if(myCheckbox.checked) 
+  {
+    // window.alert("The checkbox is checked.");
+    document.getElementById("tBox").parentNode.style.color = "black";
+  }
+  else
+  {
+    // window.alert("The checkbox is unchecked.");
+    document.getElementById("tBox").parentNode.style.color = "red";
+    document.getElementById("tBox").focus();  
+  }
+
+
+  var emailName = document.getElementById("eName").value;
+  if(emailName == "") 
+  {
+    document.getElementById("eName").parentNode.style.color = "red";
+    document.getElementById("eName").focus();
+  }
+  else
+  {1
+    document.getElementById("eName").parentNode.style.color = "black";
+  }
+
+
+  var lastName = document.getElementById("lName").value;
+  if(lastName == "") 
+  {
+    document.getElementById("lName").parentNode.style.color = "red";
+    document.getElementById("lName").focus();
+  }
+  else
+  {
+    document.getElementById("lName").parentNode.style.color = "black";
+  }
+
+
+  var firstName = document.getElementById("fName").value;
+  if(firstName == "") 
+  {
+    document.getElementById("fName").parentNode.style.color = "red";
+    document.getElementById("fName").focus();
+  }
+  else
+  {
+    document.getElementById("fName").parentNode.style.color = "black";
+  }
+
+}
+
+  </script>
+</head>
+
+<body>
+  <h1><a href="firstpage.html">Homework Website</a></h1>
+  <p></p>
+  &nbsp;
+
+  <div><br> &nbsp;First Name: <input type="text" id="fName"> <br></div>
+  <div><br> &nbsp;Last Name: <input type="text" id="lName"> <br></div>
+  <div><br> &nbsp;Email: <input type="text" id="eName"> <br></div>
+  <div><br> &nbsp;ToS: <input type="checkbox" id="tBox"> <br></div>
+<br>
+  <button id="mySubmit" class="btn btn-primary" onclick = "getInformation();">Submit</button>
+  <br>
+  <div id="message"></div>
+  <br>
+  <br>
+  <br>
+  <p id="Rdrctlnks">
+  <a id="Rdrctlnks" href="firstpage.html">Page 1: Home Page</a></li> &nbsp; | &nbsp;
+  <a id="Rdrctlnks" href="secondpage.html">Page 2: Storytime</a></li> &nbsp; | &nbsp;
+  <a id="Rdrctlnks" href="fourthpage.html">Page 4: Math Problem</a></li> &nbsp; | &nbsp;
+  </p>
+</body>
