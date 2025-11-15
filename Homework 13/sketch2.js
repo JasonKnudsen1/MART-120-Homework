@@ -21,13 +21,12 @@ var fontsize = 650;
 
 function setup() {
     createCanvas(800, 600);
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < 7; i++) {
         myXs[i] = getRandomNumber(800);
         myYs[i] = getRandomNumber(600);
-        myDiameters[i] = getRandomNumber(20);
+        myDiameters[i] = getRandomNumber(40);
     }
-    movement2 = floor(random() * 10) + 1;
-    movement3 = (floor(random() * 10) + 1) * (-1);
+    movement2 = (floor(random() * 10) + 1)*.66;
 }
 
 function draw() {
